@@ -1,14 +1,20 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Box } from '@mui/system';
 import Example from './components/example';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Example/>
-        <p>Route, TS, MUI , Redux</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Box sx={{background:'#000'}}>
+        <Routes>
+           <Route path='/' />
+           <Route path='/' />
+           <Route path='/' />
+           <Route path='/' />
+        </Routes>
+      </Box>
+    </BrowserRouter>
   );
 }
 
